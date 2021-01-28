@@ -1,0 +1,710 @@
+.mobile_on
+{
+	visibility: hidden;
+}
+
+
+@media screen and (min-width: 240px) and (max-width: 640px) {
+	/* Considering something trying to be bad boy and editing body (especially portals!) */
+	body {
+		min-width: 240px !important;
+	}
+	
+	/* Calendar Time */
+	#month_grid, #month_grid table,
+	#main_grid
+	{
+		float: none;
+		width: 100%;
+	}
+	#main_grid {
+		margin-left: 0 !important;
+	}
+	
+	/* Load menu icons */
+
+
+	/* If it has more items, make some margin */
+/*	#main_menu {
+		margin: -15px 0 0 0;
+	}
+	.dropmenu li {
+		margin: 0 0 5px 0;
+	} */
+	/* Do not hover or show them... */
+	#menu_nav .dropmenu li a.active, #menu_nav .dropmenu li a.active:hover,
+	#menu_nav .dropmenu li:hover, #menu_nav .dropmenu li a:hover,
+	#menu_nav .dropmenu li a.firstlevel:hover, #menu_nav li:hover,
+	#menu_nav .dropmenu li:hover, #menu_nav .dropmenu li:hover a.firstlevel,
+	#main_menu .dropmenu li a.active, #main_menu .dropmenu li a:hover,
+	#main_menu .dropmenu li:hover ul, #main_menu .dropmenu li ul {
+		background: none !important;
+	}
+	.keyinfo h5, .keyinfo .messageicon, #messageindex .last_th {
+		display: none;
+	}
+    
+    .tablecollapse
+    {
+        display: grid;
+    }
+/*	.bbc_img {
+		max-width: 100%;
+		max-height: 100%;
+	} */
+}
+
+@media screen and (min-width: 240px) and (max-width: 360px) {
+    .topbar-logo a img {
+        width: 98% !important;
+        }
+}
+
+@media screen and (max-width: 480px) {
+    
+    #content_section 
+    {
+    padding-left: 0;
+    }
+    
+    #content_section div.frame
+    {
+    	padding: 0;
+    }
+    
+	table.table_list tbody.content td.icon, table.table_list a.unreadlink, table.table_list a.collapse,
+	#index_common_stats
+	{
+		display: none;
+	}
+	.mobile_on
+	{
+		visibility: visible;
+	}
+	.poster li.avatar
+	{
+		/*display: none;*/
+	}
+	#manage_boards .cat_bar
+	{
+ 		margin-top: 10px;
+	}
+	#manage_boards .windowbg
+	{
+		line-height: 3.2em;
+	}
+	#manage_boards ul
+	{
+		max-height: 120em;
+		padding: 0 0 10px 0;
+	}
+	#manage_boards dd, #manage_boards dt
+	{
+		width: 100%;
+	}
+	#manage_boards dt
+	{
+		line-height: 1.6em;
+	}
+    .post_wrapper {
+        flex-direction: column;
+    }
+    .poster {
+        flex-basis: 0;
+        max-width: 100%;
+    }
+    .posterbox {
+        display: grid;
+        grid-template-columns: 64px 1fr;
+    }
+    .namearea {
+        align-self: center;
+        justify-self: flex-start;
+    }
+    .poster h4 {
+        font-size: 1.3em;
+    }
+    .avatar {
+        grid-row: 1 / 4;
+        align-self: center;
+        justify-self: flex-start;
+    }
+    .posterdata {
+        justify-self: flex-start;
+    }
+    .keyinfo {
+        /*display: none;*/
+    }
+    ul.quickbuttons {
+        margin: 6px 0 0 0;
+    }
+    .postinfo {
+        display: none;
+    }
+    .postdate {
+        justify-self: flex-end;
+        display: block;
+    }
+	.poster li.profile, .poster li.blurb, li.postcount,
+	li.im_icons, li.title, li.postgroup, li.karma,
+	li.karma_allow, li.gender, li.custom, li.email, li.warning
+	{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 639px) {
+    .poster {
+        flex-basis: 140px;
+        max-width: 140px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #header
+    {
+        background: #282d24;
+    }
+    .navigate_section {
+        order: 1;
+        padding: 0;
+    }
+    #content_section {
+        margin-top: 50px;
+        border: 0;
+        min-height: auto;
+    }
+    
+    .menutext {
+        display: block;
+        margin: 4px;
+        background: #59694e;
+        text-align: center;
+    }
+    
+    .dropmenu {
+        padding: 0;
+    }
+    
+    .dropmenu li a.firstlevel span.firstlevel {
+        background: 0;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: solid 1px #565656;
+        left: auto;
+        border-radius: 0;
+        text-shadow: none;
+        padding: 0 10px;
+    }
+    
+    .dropmenu li a.firstlevel span.firstlevel:hover {
+        background-color: #3b3b3b;
+    }
+    
+    .topbar {
+        display: flex;
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        top: 0;
+        z-index: 9999;
+        background: linear-gradient(to bottom,rgb(98, 98, 98) 0,rgb(36, 36, 36) 100%);
+        align-items: center;
+        text-align: center;
+        position: fixed;
+    }
+    .topbar-logo a img{
+        width: 80%;
+    }
+    .bpadding {
+        padding: 0 8px;
+    }
+    .topbar-bmenu {
+        display: block;
+    }
+    .topbar-bmenu:hover {
+        color: #c4b550;
+        cursor: pointer;
+    }
+    .topbar-right {
+        /*display: none;*/
+        line-height: inherit;
+    }
+    .topbar-bporfile {
+        display: block;
+    }
+    
+    .topbar-profilemenu {
+        margin: 0;
+        box-shadow: none;
+        border: 0;
+        padding: 0;
+    }
+    
+    .topbar-profilemenu li {
+        background: none;
+        border-bottom: solid 1px #565656;
+    }
+    
+    .topbar-profilemenu li:hover {
+    background-color: #3b3b3b;
+    }
+    
+    .topbar-profilemenu a {
+        padding: 0 10px;
+        height: 32px;
+        line-height: 30px;
+    }
+    
+    .topbar-profilemenu a:hover {
+        color: #fff;
+    }
+    
+    .topbar-profilemenu ul hr {
+        margin: 16px 0;
+        border: 1px solid #59694e;
+    }
+    
+    .loginmenu li {
+        border: none;
+        margin: 16px 0;
+    }
+    
+    .topbar-profile {
+        background: 0;
+        border: 0;
+    }    
+
+    
+    #topbar-username {
+        display: none;
+    }
+    .bottombar{
+    }
+    
+    .respmenu {
+        background: linear-gradient(to bottom,rgb(36, 36, 36) 0,rgb(26, 26, 26) 100%);
+        display: none;
+        position: fixed;
+        width: 230px;
+        top: 50px;
+        left: 0;
+        z-index: 1000;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;        
+    }
+    
+    .enabled {
+        display:inherit;
+    }
+    .button_strip_notify a {
+        display: none;
+    }
+    .sp_block {
+        padding: 0 !important;
+    }
+    #top_section
+    {
+        height: 100px;
+    }
+	.nav_bar_inner, .top_bar_inner, .headerm_inner
+	{
+		width: 100%;
+	}
+	.headerm, .headerm_inner
+	{
+		height: auto;
+	}
+	.logo_banner
+	{
+		text-align: center;
+		max-width: 640px;
+	}
+	.logo_banner a > img
+	{
+		max-width: 90%;
+	}
+	.quick_search_holder, #search_form
+	{
+		text-align: center;
+		margin-top: 8px;
+		float: none;
+	}
+	.dropmenu li
+	{
+		float: none;
+	}
+	.dropmenu li li, .dropmenu li li li
+	{
+		width: 100%;
+		text-align: left;
+	}
+	.dropmenu li ul
+	{
+		width: 100%;
+	}
+	table.table_list tbody.content td.stats, .lastpost
+	{
+		display: none;
+	}
+	.pagesection
+	{
+	    flex-direction: column;
+	}
+    .pagelinks
+    {
+        order: 0;
+    }
+	#quick_tasks li
+	{
+		height: auto !important;
+		padding: 0;
+		width: 100% !important;
+		float: none !important;
+	}
+	.home_image
+	{
+		clear: both;
+	}
+	#siteslogan, img#smflogo, .contact_info
+	{
+		display: none;
+	}
+	.hidden, .icon, .stats, #posting_icons, #mlist th, .icon1, .icon2, .normaltextsearch, #forumposts h3 img, #forumposts h3 span#author
+	{
+		display: none;
+	}
+	h1.forumtitle, #top2
+	{
+	    text-align: center;
+	    float: none;
+	    line-height: initial;
+	}
+	#statistics .stats
+	{
+		display: block;
+	}
+	#stats_left, #top_posters, #top_topics_replies, #top_topics_starter,
+	#stats_right, #top_boards, #top_topics_views, #most_online,
+	#popularposts, #popularactivity
+	{
+		width: 100%;
+		float: none;
+	}
+	#report_post input {
+		width: 95%;
+		min-height: 50px;
+	}
+	.tborder .topic_table th.first_th
+	{
+		display: none;
+	}
+	#topic_icons p
+	{
+		display: block;
+		width: 100%;
+	}
+	#menu_toggle
+	{
+		display: none;
+	}
+	h3.catbg
+	{
+	    height: auto;
+	    text-align: center;
+	}
+	h3.catbg #quick_search form
+	{
+		margin: 0 0 8px 0;
+		padding: 0;
+	}
+	h3.catbg #quick_search form input
+	{
+		margin: 0 0 12px 0;
+	}
+	h3.catbg #quick_search form select option
+	{
+		padding: 4px;
+	}
+	h3.catbg #quick_search form .button_submit
+	{
+		margin: 0 3px;
+	}
+	h3.catbg3 span
+    {
+    text-align: center;
+    width: auto;
+    }
+	#credits_page
+	{
+		padding-top: 35px;
+	}
+	.features_image
+	{
+		display: none;
+	}
+	.features_switch
+	{
+		margin: -20px 0 0 5px !important;
+	}
+	.features h4
+	{
+		margin: -10px 0 0 0 !important;
+		padding: 0 0 10px 0;
+	}
+	.features p
+	{
+		margin: 0;
+		padding: 0;
+		min-height: 0;
+		max-height: 5.2em;
+		overflow: auto;
+	}
+	.mark_read .buttonlist
+	{
+		float: none;
+		margin: 0 auto;
+	}
+    .buttonlist ul
+    {
+        flex-flow: wrap;
+        margin-bottom: 8px;
+    }
+	.mark_read .buttonlist li
+	{
+		width: auto;
+	}
+	#advanced_search
+	{
+		text-align: left !important;
+	}
+	em.smalltext
+	{
+		display: none;
+	}
+	#advanced_search dt, #advanced_search dd
+	{
+		width: 100%;
+		float: none;
+		text-align: left;
+		margin: 0;
+	}
+	.login dt, .login dd
+	{
+		float: none;
+		text-align: left;
+		width: 90%;
+	}
+	input.enhanced
+	{
+		display: block;
+	}
+	.enhanced select
+	{
+		display: block;
+	}
+    .navigate_section ul li a
+    {
+	    white-space: pre-wrap;
+    }
+	#advanced_search dl#search_options
+	{
+		width: 100%;
+	}
+	#searchform .input_text, select
+	{
+/*		width: 95%;
+		padding: 5px 0;*/
+	}
+	.ignoreboards
+	{
+		width: 100% !important;
+		float: none !important;
+	}
+	#searchBoardsExpand
+	{
+		overflow: hidden;
+	}
+	/* Since you asked nicely */
+	#main_menu .dropmenu li {
+		width: auto !important;
+	}
+/*	#main_menu .dropmenu span.firstlevel {
+		display: none;
+	} */
+	#main_menu .dropmenu li:hover ul {
+		display: none;
+	}
+	.gal-picframe {
+	    width: 65%;
+	}
+	.flexbetween
+    {
+    flex-direction: column;
+    }
+    .avatar a img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+	body
+	{
+		padding: 0 !important;
+		min-width: 200px !important;
+		max-width: 720px;
+	}
+	#wrapper, div#wrapper
+	{
+		width: 100% !important;
+		min-width: 240px !important;
+		max-width: 720px !important;
+	}
+	div#upper_section div.user
+	{
+		text-align: center;
+		float: none !important;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	div#upper_section div.user p, div#upper_section div.user p > .avatar
+	{
+		max-width: 100px;
+		max-height: 100px;
+		float:  none !important;
+		margin: 0 auto;
+		text-align: center !important;
+	}
+	#upper_section div.news
+	{
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	img.icon 
+	{
+		display: inline-block;
+	}
+	#basicinfo, #detailedinfo, .modblock_left, .modblock_right, #live_news, #supportVersionsTable
+	{
+		width: 100% !important;
+		float: none;
+		margin: 0 0 3px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	.login
+	{
+		width: auto !important;
+	}
+	dl
+	{
+		overflow: hidden !important;
+	}
+/*	dd, dt
+	{
+		float: none !important;
+		width: 100% !important;
+		overflow: hidden;
+		text-align: left !important;
+	}*/
+	.inner
+	{
+		padding: 1em .5em 2px .5em;
+		margin: 0;
+	}
+	.signature, .attachments
+	{
+		width: 100%;
+		margin: 1em 0 0;
+		padding: 1em 1em 3px;
+		box-sizing: border-box;
+	}
+	.keyinfo
+	{
+		background: none;
+		text-align: center;
+		/*width: 100% !important;*/
+	}
+	#forumposts .modified {
+        padding: 0 0.5em;
+	}
+	.buttonlist ul li
+	{
+		/*margin: 2px 0;*/
+	}
+	.buttonlist ul li a span
+	{
+		height: auto;
+	}
+	#quick_tasks li
+	{
+		height: 5em !important;
+		padding: 0;
+	}
+	#main_admsection #basicinfo h4
+	{
+		width: 100% !important;
+	}
+	#left_admsection
+	{
+		margin: 0 0 8px;
+		padding: 0 0 5px;
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	table.table_list tbody.content td.stats
+	{
+		display: none;
+	}
+	table.table_list tbody.content td.lastpost, .topic_table table tbody tr td.lastpost
+	{
+		width: 35% !important;
+	}
+}
+@media screen and (min-width: 240px) and (max-width: 1023px) {
+    
+body {
+    padding: 0;
+}
+	/* some dirty fix for SP :)*/
+	#sp_left, #sp_right, #sp_center
+	{
+		width: 100%;
+		display: block;
+	}
+
+.leftbar-wrap {
+display: none;
+position: fixed;
+height: 0;
+top: 0;
+width: 0;
+left: 0;
+text-align: center;
+}
+	
+.left-scrollbutton {
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+	position: fixed;
+	left: auto;
+	top: auto;
+	right: 20px;
+	bottom: 20px;
+	background: #c4b550 url(../images/up-arrow.png) no-repeat center 43%;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	opacity:0.5 !important;
+}	
+}
